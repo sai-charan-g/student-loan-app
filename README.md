@@ -2,6 +2,13 @@
 
 A full-stack education loan application system with intelligent lead scoring and dead lead detection.
 
+## 🌐 Live Deployment
+
+| | URL |
+|---|---|
+| **Frontend** | https://student-loan-app-liard.vercel.app |
+| **Backend API** | https://student-loan-app-6wnw.onrender.com |
+
 ## 🏗️ Architecture Overview
 
 ```
@@ -93,7 +100,8 @@ docker-compose up -d
 
 ```bash
 cd backend
-cp .env.example .env    # Edit DB credentials if needed
+# Create a .env file with your database credentials:
+# DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_SSL, FRONTEND_URL
 npm install
 npm run start:dev       # Runs on http://localhost:3001
 ```

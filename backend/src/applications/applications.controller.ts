@@ -20,6 +20,20 @@ export class ApplicationsController {
   constructor(private readonly applicationsService: ApplicationsService) {}
 
   /**
+   * GET /api/health
+   * Health check endpoint for deployment monitoring.
+   */
+  @Get('health')
+  health() {
+    return {
+      status: 'ok',
+      service: 'EduFund API',
+      version: '1.0.0',
+      timestamp: new Date().toISOString(),
+    };
+  }
+
+  /**
    * POST /api/applications
    * Submit a new loan application.
    */
