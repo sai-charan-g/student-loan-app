@@ -1,0 +1,40 @@
+export enum AdmissionStatus {
+  CONFIRMED = 'CONFIRMED',
+  ACCEPTED = 'ACCEPTED',
+  APPLIED = 'APPLIED',
+  PLANNING = 'PLANNING',
+}
+
+export enum EmploymentType {
+  SALARIED = 'SALARIED',
+  SELF_EMPLOYED = 'SELF_EMPLOYED',
+  BUSINESS = 'BUSINESS',
+  RETIRED = 'RETIRED',
+  OTHER = 'OTHER',
+}
+
+export enum ApplicationStatus {
+  DRAFT = 'DRAFT',
+  SUBMITTED = 'SUBMITTED',
+  UNDER_REVIEW = 'UNDER_REVIEW',
+  SCORING_COMPLETE = 'SCORING_COMPLETE',
+  NEEDS_INFO = 'NEEDS_INFO',
+  APPROVED = 'APPROVED',
+  REJECTED = 'REJECTED',
+  DISBURSED = 'DISBURSED',
+}
+
+export enum LeadCategory {
+  HIGH = 'HIGH',
+  MEDIUM = 'MEDIUM',
+  LOW = 'LOW',
+  DEAD = 'DEAD',
+}
+
+export enum DocumentType {
+  ADMISSION_LETTER = 'ADMISSION_LETTER',
+  MARKSHEET = 'MARKSHEET',
+  PAN_CARD = 'PAN_CARD',
+  INCOME_PROOF = 'INCOME_PROOF',
+}
+

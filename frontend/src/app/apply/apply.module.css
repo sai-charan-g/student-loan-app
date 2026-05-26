@@ -1,0 +1,28 @@
+.page { min-height: 100vh; background: var(--gray-50); }
+.nav { background: white; border-bottom: 1px solid var(--gray-200); position: sticky; top: 0; z-index: 50; }
+.navInner { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; }
+.logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+.logoIcon { width: 36px; height: 36px; border-radius: var(--radius-md); background: linear-gradient(135deg, var(--primary-600), var(--primary-400)); display: flex; align-items: center; justify-content: center; color: white; }
+.logoText { font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: var(--gray-900); }
+.securityBadge { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; color: var(--accent-600); font-weight: 600; background: #ecfdf5; padding: 0.375rem 0.75rem; border-radius: var(--radius-full); }
+.main { padding: 2rem 0 4rem; }
+.header { text-align: center; margin-bottom: var(--space-xl); }
+.header h1 { font-family: var(--font-display); font-size: 1.75rem; color: var(--gray-900); margin-bottom: 0.25rem; }
+.header p { color: var(--gray-500); font-size: 0.9375rem; }
+.formCard { padding: var(--space-xl) var(--space-2xl); }
+.stepTitle { font-size: 1.25rem; color: var(--gray-900); margin-bottom: 0.25rem; }
+.stepDesc { color: var(--gray-500); font-size: 0.875rem; margin-bottom: var(--space-xl); }
+.formActions { display: flex; align-items: center; gap: var(--space-md); margin-top: var(--space-xl); padding-top: var(--space-xl); border-top: 1px solid var(--gray-200); }
+.radioGroup { display: flex; gap: var(--space-lg); margin-top: 0.5rem; }
+.radioLabel { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--gray-700); cursor: pointer; }
+.radioLabel input { accent-color: var(--primary-600); }
+.reviewSection { margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--gray-100); }
+.reviewSection h3 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary-600); margin-bottom: var(--space-md); }
+.reviewGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.reviewGrid div { display: flex; flex-direction: column; gap: 2px; }
+.reviewGrid span { font-size: 0.75rem; color: var(--gray-400); }
+.reviewGrid strong { font-size: 0.875rem; color: var(--gray-800); font-weight: 600; }
+.disclaimer { display: flex; gap: 0.75rem; align-items: flex-start; background: var(--primary-50); border: 1px solid var(--primary-200); border-radius: var(--radius-md); padding: var(--space-md); margin-top: var(--space-lg); }
+.disclaimer svg { flex-shrink: 0; color: var(--primary-500); margin-top: 2px; }
+.disclaimer p { font-size: 0.8125rem; color: var(--gray-600); line-height: 1.5; }
+@media (max-width: 640px) { .formCard { padding: var(--space-lg); } .reviewGrid { grid-template-columns: 1fr; } }
